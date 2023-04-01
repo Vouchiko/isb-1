@@ -49,7 +49,23 @@ with open ("OIB1.2.txt", "r", encoding="utf-8") as file:
     text = text.replace("Р", "Д")
     dict["Р"] = "Д"
 
-    
+    text = text.replace("В", "/")
+    text = text.replace("О", "В")
+    dict["О"] = "В"
+
+    text = text.replace("О", "9")
+    text = text.replace("?", "О")
+    dict["?"] = "О"
+
+    text = text.replace("Ч", "%")
+    text = text.replace("<", "Ч")
+    dict["<"] = "Ч"
+
+    text = text.replace("С", ":")
+    text = text.replace("=", "С")
+    dict["="] = "С"
+
+   
     
     print(text)
     #print(dict)
