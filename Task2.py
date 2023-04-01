@@ -81,6 +81,22 @@ with open ("OIB1.2.txt", "r", encoding="utf-8") as file:
     text = text.replace("7", "Ж")
     dict["7"] = "Ж"
 
+    text = text.replace("З", "6")
+    text = text.replace("8", "З")
+    dict["8"] = "З"
+
+    text = text.replace("Я", "8")
+    text = text.replace("{", "Я")
+    dict["{"] = "Я"
+
+    text = text.replace("Т", "&")
+    text = text.replace("С̆", "Т")
+    dict["С̆"] = "Ю"
+
+    text = text.replace("Ь", "1")
+    text = text.replace(".", "Ь")
+    dict["."] = "Т"
+
     
     
     print(text)
