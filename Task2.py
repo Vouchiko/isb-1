@@ -97,7 +97,57 @@ with open ("OIB1.2.txt", "r", encoding="utf-8") as file:
     text = text.replace(".", "Ь")
     dict["."] = "Т"
 
-    
+    text = text.replace("М", "№")
+    text = text.replace("П", "М")
+    dict["П"] = "М"
+
+    text = text.replace("М", ")")
+    text = text.replace("№", "М")
+    dict["№"] = "М"
+
+    text = text.replace("У", "$")
+    text = text.replace("%", "У")
+    dict["%"] = "У"
+
+    text = text.replace("П", "^")
+    text = text.replace("r", "П")
+    dict["r"] = "П"
+
+    text = text.replace("Г", "&")
+    text = text.replace(")", "Г")
+    dict[")"] = "Г"
+
+    text = text.replace("Ю", "±")
+    text = text.replace("@", "Ю")
+    dict["@"] = "Ю"
+
+    text = text.replace("X", "β")
+    text = text.replace("Щ", "X")
+    dict["Щ"] = "Х"
+
+    text = text.replace("Ц", "α")
+    text = text.replace("Ъ", "Ц")
+    dict["Ъ"] = "Ц"
+
+    text = text.replace("Ф", "γ")
+    text = text.replace("Ш", "Ф")
+    dict["Ш"] = "Ф"
+
+    text = text.replace("Ш", "δ")
+    text = text.replace("!", "Ш")
+    dict["!"] = "Ш"
+
+    text = text.replace("Б", "Ω")
+    text = text.replace("5", "Б")
+    dict["5"] = "Б"
+
+    text = text.replace("Й", "Σ")
+    text = text.replace("γ", "Й")
+    dict["γ"] = "Й"
+
+    text = text.replace("Щ", "Δ")
+    text = text.replace("1", "Щ")
+    dict["1"] = "Щ"
     
     print(text)
     #print(dict)
