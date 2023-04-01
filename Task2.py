@@ -21,6 +21,17 @@ with open ("OIB1.2.txt", "r", encoding="utf-8") as file:
     text = text.replace("М", " ")
     dict["M"] = " "
 
+    text = text.replace("И", "=")
+    text = text.replace("У", "И")
+    dict["У"] = "И"
+
+    text = text.replace("Л", "{")
+    text = text.replace("1", "Л")
+    dict["1"] = "Л"
+
+    text = text.replace("А", ".")
+    text = text.replace("4", "А")
+    dict["4"] = "А"
 
     
     print(text)
