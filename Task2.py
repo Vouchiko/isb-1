@@ -65,7 +65,23 @@ with open ("OIB1.2.txt", "r", encoding="utf-8") as file:
     text = text.replace("=", "С")
     dict["="] = "С"
 
-   
+    text = text.replace("К", "@")
+    text = text.replace("Х", "К")
+    dict["Х"] = "К"
+
+    text = text.replace("Р", "[")
+    text = text.replace("t", "Р")
+    dict["t"] = "Р"
+
+    text = text.replace("М", "__")
+    text = text.replace("2", "М")
+    dict["2"] = "М"
+
+    text = text.replace("Ж", "5")
+    text = text.replace("7", "Ж")
+    dict["7"] = "Ж"
+
+    
     
     print(text)
     #print(dict)
